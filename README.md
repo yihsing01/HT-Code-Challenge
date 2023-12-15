@@ -21,7 +21,7 @@ The solution involves finding the next bigger number by rearranging the digits i
 
 1. **Convert to Array**: For easier manipulation and comparison of individual digits.
 2. **Check for Single or Same Digit Number**: If the input number consists of only a single digit or only the same digit, it is impossible to rearrange them to form a bigger number.
-3. **Identify a Position for Rearrangement**: Scanning the digits from right to left to identify the first instance where a digit is smaller then the digit on its right. This indicates a position where rearrangement can create a bigger number. If not found, it indicates that it is impossible to form a bigger number.
+3. **Identify a Position for Rearrangement**: Scanning the digits from right to left to identify the first instance where a digit is smaller than the digit on its right. This indicates a position where rearrangement can create a bigger number. If not found, it indicates that it is impossible to form a bigger number.
 4. **Swap with the Smallest Larger Digit on the Right**: The algorithm locates the smallest larger digit to the right of the identified digit from the previous step. The two identified digits are swapped to create the next immediate larger number while minimising changes to the original number.
 5.  **Sort the Remaining Digits Ascendingly**: The remaining digits on the right are sorted ascendingly to ensure the smallest possible number for the new arrangement, resulting in the next bigger number from the input.
 
